@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../stylesheets/Header.css';
+import styles from '../stylesheets/Header.module.css';
 
 class Header extends Component {
   navTo(uri) {
@@ -8,7 +8,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className='App-header'>
+      <div className={`App-header ${styles.header}`}>
         <h1
           onClick={() => {
             this.navTo('');
